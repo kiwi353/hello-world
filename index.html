@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+</head>
+<body>
+    <button onclick="helloConsole();">Hello, Console</button>
+    <button onclick="helloAlert();">Hello, Pop-up</button>
+    <button onclick="helloBrowser();">Hello, Browser</button>
+    <button onclick="helloMe();">Hello, Stranger</button>
+    <p id="browserEdit">
+</body>
+
+<script type="text/javascript">
+    function helloConsole() {
+        console.log("Hello, Console!");
+    }
+    function helloAlert() {
+        alert("Hello Pop-up");
+    }
+    function helloBrowser(){
+        var helloP = document.getElementById("browserEdit");
+        helloP.innerHTML = "Hello, Browser!";
+    }
+    function helloMe() {
+        var p = getElementById("browserEdit");
+        var username = promt("Enter Your Name:");
+        helloP.innerHTML = username;
+    }
+</script>
